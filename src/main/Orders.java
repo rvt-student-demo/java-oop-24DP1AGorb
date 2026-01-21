@@ -5,7 +5,7 @@ public class Orders{
 
     try{
 
-        File file = new File("data/orders.csv");
+        File file = new File("data\\orders.csv");
         while(true){
             String[] dati = rinda.spilt(",");
 
