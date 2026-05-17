@@ -2,6 +2,7 @@ package rvt;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
+import java.io.FileNotFoundException;
 public class toDoPart2{
     public static void main(String[] args) {
         
@@ -17,7 +18,10 @@ public class toDoPart2{
 
     private void loadFromFile(){
         try{
-            Scanner reader = new Scanner(new File(filePath));
+            Scanner scanner = new Scanner(new File(filePath));
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
         finally{
             System.out.println("Hi");

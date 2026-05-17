@@ -3,8 +3,11 @@ import java.util.HashMap;
 public class Warehouse{
 
     HashMap<String, Integer> prices = new HashMap<>(){
-        this.price.put(product, String.valueOf(price));
-    }
+        {
+            put("milk", 3);
+            put("coffee", 5);
+        }
+    };
     HashMap<String, Integer> stocks = new HashMap<>();
     public static void main(String[] args){
         Warehouse warehouse = new Warehouse();

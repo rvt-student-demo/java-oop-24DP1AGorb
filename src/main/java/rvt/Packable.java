@@ -1,7 +1,9 @@
+package rvt;
 public interface Packable{
     double weight();
 }
-public class Book implements Packable{
+
+class Book implements Packable{
 
     private String author;
     private String name;
@@ -11,9 +13,9 @@ public class Book implements Packable{
         this.author = author;
         this.name = name;
         this.weight = weight;
+    }
 
-        }
-         public returnType weight(){
-            return weight;
+    public double weight(){
+        return this.weight;
     }
 }
